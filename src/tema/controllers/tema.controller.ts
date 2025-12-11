@@ -3,7 +3,6 @@ import { TemaService } from "../services/tema.service";
 import { Tema } from "../entities/tema.entity";
 import { LocalAuthGuard } from "../../auth/guard/local-auth.guard";
 
-@UseGuards(LocalAuthGuard)
 @Controller('/temas')
 export class TemaController{
     constructor(private readonly temaService: TemaService) {}
