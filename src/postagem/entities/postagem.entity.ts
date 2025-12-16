@@ -12,7 +12,6 @@ import { ApiProperty } from '@nestjs/swagger';
 
 @Entity({ name: 'tb_postagens' })
 export class Postagem {
-  
   @ApiProperty()
   @PrimaryGeneratedColumn()
   id: number;

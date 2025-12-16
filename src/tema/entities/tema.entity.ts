@@ -5,7 +5,6 @@ import { ApiProperty } from '@nestjs/swagger';
 
 @Entity({ name: 'tb_temas' })
 export class Tema {
-
   @ApiProperty()
   @PrimaryGeneratedColumn()
   id: number;
@@ -14,7 +13,7 @@ export class Tema {
   @IsNotEmpty()
   @Column({ length: 255, nullable: false })
   descricao: string;
-  
+
   @ApiProperty()
   @OneToMany(() => Postagem, (postagem) => postagem.tema)
   postagem: Postagem[];

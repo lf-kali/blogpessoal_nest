@@ -9,7 +9,8 @@ import { ConfigModule } from '@nestjs/config';
 import { ProdService } from './data/services/prod.service';
 
 @Module({
-  imports: [ ConfigModule.forRoot(),
+  imports: [
+    ConfigModule.forRoot(),
     TypeOrmModule.forRootAsync({
       useClass: ProdService,
       imports: [ConfigModule],
