@@ -8,7 +8,7 @@ import { AuthService } from './services/auth.service';
 import { AuthController } from './controllers/auth.controller';
 import { LocalStrategy } from './strategy/local.strategy';
 import { JwtStrategy } from './strategy/jwt.strategy';
- 
+
 @Module({
   imports: [
     forwardRef(() => UsuarioModule),
@@ -23,5 +23,3 @@ import { JwtStrategy } from './strategy/jwt.strategy';
   exports: [Bcrypt],
 })
 export class AuthModule {}
- 
- 
