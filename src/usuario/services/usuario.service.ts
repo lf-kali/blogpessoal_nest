@@ -56,7 +56,7 @@ export class UsuarioService {
 
     if (buscaUsuario) {
       throw new HttpException(
-        `Usuário ${usuario} já existe!`,
+        `Usuário ${usuario.usuario} já existe!`,
         HttpStatus.BAD_REQUEST,
       );
     }
